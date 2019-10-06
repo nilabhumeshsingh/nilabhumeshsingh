@@ -1,0 +1,607 @@
+int m1 = 9; 
+int m2 = 10; 
+int m3 = 6;    
+int m4 = 5;      
+int ir1 = 13;       
+int ir2 = 12; 
+int ir3 = 11;
+int ir4 = 8;
+int ir5 = 7;   
+int ir6 = 4;
+int ir7 = 3;
+int ir8 = 2; 
+int a, b, c, d, e,f, g, h;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode (m1, OUTPUT);
+  pinMode (m2, OUTPUT);
+  pinMode (m3, OUTPUT);
+  pinMode (m4, OUTPUT); 
+  pinMode (ir2, INPUT);
+  pinMode (ir2, INPUT);
+  pinMode (ir3, INPUT);
+  pinMode (ir4, INPUT);
+  pinMode (ir5, INPUT);
+  pinMode (ir6, INPUT);
+  pinMode (ir7, INPUT);
+  pinMode (ir8, INPUT);
+}
+
+void loop() {
+  a = digitalRead(ir1);  
+  Serial.println(a);
+  b = digitalRead(ir2);
+  Serial.println(b);
+  c = digitalRead(ir3);
+  Serial.println(c);
+  d = digitalRead(ir4);
+  Serial.println(d);
+  e = digitalRead(ir5);
+  Serial.println(e);
+  f = digitalRead(ir6);
+  Serial.println(f);
+  g = digitalRead(ir7); 
+  Serial.println(g);
+  h = digitalRead(ir8);
+  Serial.println(h);
+
+
+
+  
+  if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  else if (a == LOW && b == LOW && c == HIGH && d == HIGH && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  else if (a == LOW && b == LOW && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  
+  
+
+  else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);  
+  } 
+
+
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 100);
+    analogWrite (m4, 0);
+    //delay(200);
+  } 
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 500);
+    //delay(200);
+  } 
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 100);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 100);
+    analogWrite (m4, 0);
+    //delay(200);
+  } 
+      else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  } 
+        else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 100);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  
+  
+  
+  else if (a == LOW && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }   
+    else if (a == HIGH && b == HIGH && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }   
+      else if (a == HIGH && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }   
+    else if (a == LOW && b == LOW && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 50);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }   
+    else if (a == HIGH && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }   
+    else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }   
+    else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }   
+    else if (a == HIGH && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }   
+  else if (a == LOW && b == LOW && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  } 
+  else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+  
+  
+  else if (a == LOW && b == HIGH && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 100);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }  
+  
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 100);
+    analogWrite (m4, 0);
+    //delay(200);
+  }  
+  
+  else if (a == LOW && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 200);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  } 
+  
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 200);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  
+  else if (a == LOW && b == HIGH && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 200);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  } 
+  
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 200);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  else if (a == HIGH && b == HIGH && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  else if (a == HIGH && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+    else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+      else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+      else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+  
+  
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+      else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+      else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+      else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  else if (a == HIGH && b == LOW && c == LOW && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+      else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+
+    else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(500);
+    //delay(200);
+  }
+  else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(200);
+  }
+
+    else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  
+
+
+    else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(500);
+    //delay(200);
+  }
+
+
+    else if (a == LOW && b == LOW && c == LOW && d == LOW && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(500);
+    //delay(200);
+  }
+
+  else if (a == LOW && b == LOW && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(200);
+  }
+  
+   else if (a == LOW && b == LOW && c == LOW && d == LOW && e == LOW && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(500);
+    //delay(200);
+  }
+    else if (a == HIGH && b == HIGH && c == HIGH && d == LOW && e == LOW && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(500);
+    //delay(200);
+  }
+    else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == LOW && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 250);
+    analogWrite (m2, 0);
+    analogWrite (m3, 0);
+    analogWrite (m4, 250);
+    //delay(500);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == LOW && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 250);
+    analogWrite (m3, 250);
+    analogWrite (m4, 0);
+    //delay(500);
+    //delay(200);
+  }
+  else if (a == LOW && b == LOW && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+    else if (a == LOW && b == LOW && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+    else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == LOW && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+      else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+      else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+    else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == LOW )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+      else if (a == LOW && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+    else if (a == HIGH && b == HIGH && c == HIGH && d == HIGH && e == HIGH && f == HIGH && g == HIGH && h == HIGH )
+  {
+    analogWrite (m1, 0);
+    analogWrite (m2, 200);
+    analogWrite (m3, 0);
+    analogWrite (m4, 200);
+    //delay(200);
+  }
+  
+
+
+  
+}
